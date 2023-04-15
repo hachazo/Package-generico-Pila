@@ -53,7 +53,7 @@ package body Pila is
    
    begin
       
-      return Pila.Cabeza=Max;
+      return Pila.Cabeza=cabeza.max;
       
    end Is_Full;
       

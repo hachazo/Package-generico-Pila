@@ -1,11 +1,10 @@
 generic
    
    type Tipodato is private;
-   Max: positive; --tope de la pila
 
 package Pila is
       
-      type Tipopila (Max: Positive) is limited private;
+      type Tipopila (Max: Positive) is private;
       
    procedure clear(pila: in out Tipopila);
    --Elimina todos los elementos de la pila
