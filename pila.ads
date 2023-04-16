@@ -38,9 +38,9 @@ package Pila is
       
    end record;
    
-  -- package Pilain is new Pila(tipovec);
+  -- package Pilain is new Pila(tipovec); --se instancia el paquete
   -- use pilain;
-  --subtype Tipopila5 is Tipopila(5); --pila de 5 elementos
+  --subtype Tipopila5 is Tipopila(5); --pila de 5 elementos (tipopila --> es el tipo instanciado en al adb) 
   -- Var_pila:Tipopila5;
       
 end pila;
