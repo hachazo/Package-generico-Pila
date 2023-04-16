@@ -37,5 +37,10 @@ package Pila is
    Elemento: Arreglopila(1..Max);
       
    end record;
+   
+  -- package Pilain is new Pila(tipovec);
+  -- use pilain;
+  --subtype Tipopila5 is Tipopila(5); --pila de 5 elementos
+  -- Var_pila:Tipopila5;
       
 end pila;
