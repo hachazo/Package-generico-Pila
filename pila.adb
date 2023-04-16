@@ -13,7 +13,8 @@ package body Pila is
       
       if not Is_Full(pila) then --cheqea que la pila no este llena
          pila.cabeza := pila.cabeza + 1;
-         pila.elemento(pila.cabeza) := Item;
+         Pila.Elemento(Pila.Cabeza) := Item;
+         else raise Overflow;
       end if;
    
    end Push;
@@ -26,6 +27,7 @@ package body Pila is
          if not Is_Empty(Pila) then --chequea que la pila no este vacia
             elemento:=pila.elemento(pila.cabeza);
             Pila.Cabeza:=Pila.Cabeza -1;
+            else raise Underflow;
             end if;
             
       end pop;
@@ -53,7 +55,7 @@ package body Pila is
    
    begin
       
-      return Pila.Cabeza=cabeza.max;
+      return Pila.Cabeza=pila.Max;
       
    end Is_Full;
       

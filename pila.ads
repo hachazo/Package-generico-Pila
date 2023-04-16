@@ -6,6 +6,8 @@ package Pila is
       
       type Tipopila (Max: Positive) is private;
       
+      Underflow, Overflow: exception;
+      
    procedure clear(pila: in out Tipopila);
    --Elimina todos los elementos de la pila
       
