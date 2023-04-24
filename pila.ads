@@ -17,9 +17,6 @@ package Pila is
    procedure Pop (pila: in out tipopila; elemento: out tipodato);
    -- Elimina y devuelve el elemento en la cima de la pila
 
-   function Top (pila: in tipopila) return tipodato;
-   -- Devuelve el elemento en la cima de la pila sin eliminarlo
-
    function Is_Empty (pila: in tipopila) return Boolean;
    -- Devuelve True si la pila está vacía
 
@@ -37,10 +34,5 @@ package Pila is
    Elemento: Arreglopila(1..Max);
       
    end record;
-   
-  -- package Pilain is new Pila(tipovec); --se instancia el paquete
-  -- use pilain;
-  --subtype Tipopila5 is Tipopila(5); --pila de 5 elementos (tipopila --> es el tipo instanciado en al adb) 
-  -- Var_pila:Tipopila5;
       
 end pila;

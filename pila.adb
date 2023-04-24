@@ -31,15 +31,6 @@ package body Pila is
             end if;
             
       end pop;
-   
-      --devuelve el elemento en la cima de la pila sin eliminarlo
-      function Top(Pila: in Tipopila) return Tipodato is
-      
-      begin
-         
-         return pila.elemento(pila.cabeza);
-      
-      end Top;
       
       --devuelve true si la pila esta vacia
       Function Is_Empty (Pila: in Tipopila) return Boolean is
